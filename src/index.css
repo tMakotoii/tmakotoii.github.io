@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@import './styles/fonts.css';
+
+:root {
+  --bg-color: #f0f0f0;
+  --bg-second-color: #f7f7f7;
+  --color-active-icon: #242424;
+  --color-inactive-icon: #8e8e8e;
+  --color-active-icon-select: #f1f1f1;
+  --color-dot-marker: #cccccc;
+  --bg-color-available: #d0fadf;
+  --color-available-dot: #28c780;
+  --color-available-text: #039754;
+  --color-header-text: #373737;
+  --color-text: #666666;
+  --color-avatar-outline: #f1f1f1;
+}
+
+@layer base {
+  html {
+    font-family: "sFProText", sans-serif;
+    color: var(--color-text);
+  }
+  
+  body {
+    background-color: var(--bg-color);
+  }
+
+  h1, h2 {
+    color: var(--color-header-text);
+  }
+}
+
+@layer components {
+  .main-plate {
+    background-color: #ffffff;
+
+    border-color: #e6e6e6;
+    border-width: 1px;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 10px #0a0a0a0f;
+  }
+
+  .shadow-hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .shadow-hover:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.1),
+                0 0 0 4px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .bg-secondary {
+    background-color: var(--bg-second-color);
+  }
+
+  .icon-active {
+    color: var(--color-active-icon);
+  }
+
+  .icon-inactive {
+    color: var(--color-inactive-icon);
+  }
+
+  .icon-active-select {
+    background-color: var(--color-active-icon-select);
+    border-radius: 100%;
+    padding: 8px;
+  }
+
+  .dot-marker {
+    background-color: var(--color-dot-marker);
+  }
+
+  .bg-available {
+    background-color: var(--bg-color-available);
+  }
+
+  .available-dot {
+    background-color: var(--color-available-dot);
+  }
+
+  .available-text {
+    color: var(--color-available-text);
+  }
+  
+  .header-text {
+    color: var(--color-header-text);
+  }
+
+  .avatar-outline {
+    outline: 8px solid var(--color-avatar-outline)
+  }
+}
