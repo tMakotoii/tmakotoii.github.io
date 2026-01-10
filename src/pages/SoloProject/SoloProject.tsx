@@ -27,13 +27,12 @@ export const SoloProject = () => {
                         <h1 className="text-4xl font-bold pt-6">{project.name}</h1>
                         <p className="pt-6">{project.texts[0]}</p>
                         <img className="pt-8" src={project.images[0]} />
+                        <h2 className="text-2xl font-bold pt-10">Проблема</h2>
                         <p className="pt-5">{project.texts[1]}</p>
                         <img className="pt-8" src={project.images[1]} />
-                        <h2 className="text-2xl font-bold pt-10">Проблема</h2>
+                        <h2 className="text-2xl font-bold pt-10">Моё решение</h2>
                         <p className="pt-5">{project.texts[2]}</p>
                         <img className="pt-8" src={project.images[2]} />
-                        <h2 className="text-2xl font-bold pt-10">Наше решение</h2>
-                        <p className="pt-6">{project.texts[2]}</p>
                     </div>
                 </div>
             </div>
